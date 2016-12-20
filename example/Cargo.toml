@@ -1,0 +1,26 @@
+[package]
+name = "example"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+[dependencies]
+gl = "0.6.1"
+glutin = "0.7.0"
+
+[dependencies.camera_components]
+git = "https://github.com/nathanfaucett/rs-camera_components.git"
+
+[dependencies.gl_context]
+git = "https://github.com/nathanfaucett/rs-gl_context.git"
+
+[dependencies.geometry]
+git = "https://github.com/nathanfaucett/rs-geometry.git"
+
+[dependencies.scene_renderer]
+git = "https://github.com/nathanfaucett/rs-scene_renderer.git"
+
+[dependencies.scene_graph]
+git = "https://github.com/nathanfaucett/rs-scene_graph.git"
+
+[dependencies.gl_renderer_plugin]
+path = ".."
