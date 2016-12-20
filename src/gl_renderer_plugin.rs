@@ -2,7 +2,7 @@ use camera_components::{Camera3DManager, Camera2DManager};
 
 use uuid::Uuid;
 
-use gl_context::{Context, Depth, Program};
+use gl_context::{Context, Program};
 use gl_geometry::GLGeometry;
 
 use geometry::Geometry;
@@ -175,10 +175,7 @@ impl Plugin for GLRendererPlugin {
         self.get_context_mut().reset();
     }
     fn init(&mut self) {
-        let mut context = self.get_context_mut();
-
-        context.init();
-        context.set_depth_func(Depth::Always);
+        self.get_context_mut().init();
     }
     fn before_render(&mut self) {
         if let Some(camera3d) = {
