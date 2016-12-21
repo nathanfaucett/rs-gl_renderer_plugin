@@ -12,43 +12,25 @@ homepage = "https://github.com/nathanfaucett/rs-gl_renderer_plugin"
 
 exclude = ["example"]
 
-[dependencies.gl]
-version = "0.6.1"
+[dependencies]
+gl = {version = "0.6.1"}
+uuid = {version = "0.2", features = ["v4"]}
 
-[dependencies.vector]
-git = "https://github.com/nathanfaucett/rs-vector.git"
-[dependencies.stack]
-git = "https://github.com/nathanfaucett/rs-stack.git"
-[dependencies.hash_map]
-git = "https://github.com/nathanfaucett/rs-hash_map.git"
-[dependencies.insert]
-git = "https://github.com/nathanfaucett/rs-insert.git"
-[dependencies.map]
-git = "https://github.com/nathanfaucett/rs-map.git"
-[dependencies.iterable]
-git = "https://github.com/nathanfaucett/rs-iterable.git"
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack.git"}
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map.git"}
+insert = {git = "https://github.com/nathanfaucett/rs-insert.git"}
+map = {git = "https://github.com/nathanfaucett/rs-map.git"}
+iterable = {git = "https://github.com/nathanfaucett/rs-iterable.git"}
 
-[dependencies.camera_components]
-git = "https://github.com/nathanfaucett/rs-camera_components.git"
+camera_components = {git = "https://github.com/nathanfaucett/rs-camera_components.git"}
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
+scene_renderer = {git = "https://github.com/nathanfaucett/rs-scene_renderer.git"}
 
-[dependencies.scene_graph]
-git = "https://github.com/nathanfaucett/rs-scene_graph.git"
-[dependencies.scene_renderer]
-git = "https://github.com/nathanfaucett/rs-scene_renderer.git"
+geometry = {git = "https://github.com/nathanfaucett/rs-geometry.git"}
+material = {git = "https://github.com/nathanfaucett/rs-material.git"}
 
-[dependencies.geometry]
-git = "https://github.com/nathanfaucett/rs-geometry.git"
-[dependencies.material]
-git = "https://github.com/nathanfaucett/rs-material.git"
+gl_context = {git = "https://github.com/nathanfaucett/rs-gl_context.git"}
+gl_geometry = {git = "https://github.com/nathanfaucett/rs-gl_geometry.git"}
 
-[dependencies.gl_geometry]
-git = "https://github.com/nathanfaucett/rs-gl_geometry.git"
-[dependencies.gl_context]
-git = "https://github.com/nathanfaucett/rs-gl_context.git"
-
-[dependencies.shared]
-git = "https://github.com/nathanfaucett/rs-shared.git"
-
-[dependencies.uuid]
-version = "0.2"
-features = ["v4"]
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
