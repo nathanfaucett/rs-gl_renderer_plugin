@@ -188,8 +188,8 @@ impl Plugin for GLRendererPlugin {
             }
         } {
             let mut context = self.get_context_mut();
-            context.clear(true, true, true);
             context.set_clear_color(camera3d.get_background());
+            context.clear(true, true, true);
         } else if let Some(camera2d) = {
             let scene = self.get_scene_renderer().unwrap().get_scene();
 
@@ -200,12 +200,12 @@ impl Plugin for GLRendererPlugin {
             }
         } {
             let mut context = self.get_context_mut();
-            context.clear(true, true, true);
             context.set_clear_color(camera2d.get_background());
+            context.clear(true, true, true);
         } else {
             let mut context = self.get_context_mut();
-            context.clear(true, true, true);
             context.set_clear_color(&[0.0, 0.0, 0.0, 1.0]);
+            context.clear(true, true, true);
         }
     }
     fn after_render(&mut self) {}
